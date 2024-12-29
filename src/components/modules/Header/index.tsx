@@ -13,7 +13,7 @@ const Header: React.FC = () => {
 
   return (
     <header>
-      <div className="bg-luna-beige min-h-16">
+      <div className="bg-luna-beige h-header">
         <div className="flex py-4 justify-between items-center px-6">
           <Link href={routes.home} replace>
             <div>
@@ -61,9 +61,10 @@ const Header: React.FC = () => {
 
 const navList = [
   { title: "HOME", route: routes.home },
-  { title: "PRODUCT", route: routes.product },
-  { title: "TEAM", route: routes.team },
+  { title: "DISPENSERS", route: routes.dispensers },
   { title: "FUNDRAISING", route: routes.fundraising },
+  { title: "STRUCTURE", route: routes.structure },
+  { title: "TEAM", route: routes.team },
 ];
 
 export default Header;
