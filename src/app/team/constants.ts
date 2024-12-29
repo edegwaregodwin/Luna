@@ -53,6 +53,6 @@ export const teamInfo: {name: string, image: StaticImageData, position: string}[
   {
     name: "GODWIN EDEGWARE",
     image: Godwin,
-    position: "Software Developer"
+    position: "Website Developer"
   },
 ];
