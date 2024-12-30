@@ -36,6 +36,7 @@ const Header: React.FC = () => {
                         href={route}
                         className="hover:opacity-70 pl-4 pr-6 py-2"
                         replace
+                        onClick={()=>setShowList(false)}
                       >
                         <li>{title}</li>
                       </Link>
