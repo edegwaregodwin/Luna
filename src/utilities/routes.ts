@@ -1,6 +1,7 @@
 export const routes = {
-  fundraising: "/fundraising",
-  product: "/product",
   home: "/",
+  dispensers: "/dispensers",
+  fundraising: "/fundraising",
+  structure: "/structure",
   team: "/team",
 };

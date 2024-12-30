@@ -6,23 +6,21 @@ export default function FundraisingPage() {
     <div>
       <section className="pt-2 pb-14 bg-luna-beige text-luna-blue">
         <div className="text-center flex flex-col items-center px-8">
-          <h1 className="font-bold text-3xl mt-6 mb-12">CURRENT FUNDRAISING</h1>
+          <h1 className="font-bold text-3xl mt-6 mb-10">FUNDRAISING</h1>
           <div className="leading-none flex flex-col gap-y-4 md:w-1/2">
             <p>
-              Period poverty significantly impacts the health, education, and
-              dignity of individuals who menstruate, often resulting in missed
-              school days and decreased productivity. By engaging in fundraising
-              efforts, we can develop and distribute affordable menstrual
-              products and implement educational programmes to raise awareness
-              about menstrual health. Additionally, fundraising enables us to
-              invest in partnerships with local communities and organisations,
-              fostering a more comprehensive approach to addressing the complex
-              challenges associated with period poverty.
+              By engaging in fundraising efforts, we are able to donate our
+              dispensers so that people in need can access period products when
+              they need them. Additionally, fundraising enables us to distribute
+              educational resources as part of our workshops in schools in the
+              UK.
             </p>
             <p>
               We are currently preparing for a myriad of events this year. From
-              hosting fundraisers to attending accelerator events, we have big
-              plans for the year. Keep an eye on our socials for updates!
+              hosting fundraisers to pitching our project at social enterprise
+              competitions, we have big plans for the year. So far this year, we
+              have already hosted our first fundraiser at UCL. Keep an eye on
+              our socials for our next events!
             </p>
           </div>
         </div>
@@ -54,7 +52,11 @@ export default function FundraisingPage() {
             </p>
           </div>
           <div className="w-fit mx-auto my-10">
-            <Image src={SchrodersTeam} className="w-64 md:w-400" alt="luna team" />
+            <Image
+              src={SchrodersTeam}
+              className="w-64 md:w-400"
+              alt="luna team"
+            />
           </div>
         </div>
       </section>
