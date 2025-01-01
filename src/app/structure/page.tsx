@@ -1,6 +1,6 @@
 export default function StructurePage() {
   return (
-    <div className="bg-luna-beige h-content-screen">
+    <div className="bg-luna-beige min-h-content-screen">
       <div className="flex flex-col items-center pt-2 pb-20">
         <main className="text-luna-blue text-center flex flex-col items-center">
           <h1 className="font-bold text-3xl mt-6 mb-12">OUR STRUCTURE</h1>
