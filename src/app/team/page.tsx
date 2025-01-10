@@ -12,7 +12,7 @@ export default function TeamPage() {
             CV and we will get back to you.
           </p>
         </div>
-        <div className="grid grid-cols-2 md:grid-cols-3 gap-5 leading-tight">
+        <div className="grid grid-cols-3 gap-1 md:gap-5 leading-tight">
           {teamInfo.map(({ name, image, position }) => (
             <TeamCard
               key={name}

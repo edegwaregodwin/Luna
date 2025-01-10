@@ -11,30 +11,40 @@ import Nirupama from "@/../public/images/team/nirupama.jpg";
 import Godwin from "@/../public/images/team/godwin.jpg";
 import { StaticImageData } from "next/image";
 
-export const teamInfo: {name: string, image: StaticImageData, position: string}[] = [
-  { name: "EDDIE CHILDS", image: Eddie, position: "Executive Director" },
+export const teamInfo: {
+  name: string;
+  image: StaticImageData;
+  position: string;
+}[] = [
+  { name: "EDDIE CHILDS", image: Eddie, position: "Project Lead" },
+  {
+    name: "EMILY BAKER",
+    image: Emily,
+    position: "Head of Operations",
+  },
   {
     name: "ANTHEA GABOT",
     image: Anthea,
-    position: "Director of Educational Workshops",
+    position: "Head of Educational Workshops",
   },
   {
     name: "GIORGIO GASTAUT",
     image: Giorgio,
-    position: "Lead Product Engineer",
+    position: "Head of Manufacturing and Distribution",
+  },
+  {
+    name: "ALICE WANG",
+    image: Alice,
+    position: "Head of HR",
   },
   {
     name: "ANNA CHARLOTTE ENGELBERT",
     image: Anna,
-    position: "Business Development",
+    position: "VP of Sales",
   },
-  { name: "JIA EN WONG", image: Jia, position: "Business Development" },
-  { name: "GENEVA CHAN", image: Geneva, position: "Business Development" },
-  {
-    name: "EMILY BAKER",
-    image: Emily,
-    position: "Product Design and Fundraising",
-  },
+  { name: "JIA EN WONG", image: Jia, position: "VP of Sales" },
+  { name: "GENEVA CHAN", image: Geneva, position: "VP of Sales" },
+
   {
     name: "NIRUPAMA RAJEEV NAIR",
     image: Nirupama,
@@ -45,14 +55,10 @@ export const teamInfo: {name: string, image: StaticImageData, position: string}[
     image: Cristina,
     position: "Marketing and Fundraising",
   },
-  {
-    name: "ALICE WANG",
-    image: Alice,
-    position: "Product Sourcing and Fundraising",
-  },
+
   {
     name: "GODWIN EDEGWARE",
     image: Godwin,
-    position: "Website Developer"
+    position: "Website Developer",
   },
 ];
