@@ -6,7 +6,7 @@ export const TeamCard: React.FC<{
   name: string;
   position: string;
 }> = ({ imageSrc, name, position }) => (
-  <div className="flex flex-col items-center py-4 px-3 md:p-5 h-80 md:h-[369px] w-[7.5rem] md:w-64 bg-luna-blue text-luna-beige rounded-lg text-center">
+  <div className="flex flex-col items-center py-4 px-3 md:p-5 h-72 md:h-[369px] w-[7.5rem] md:w-64 bg-luna-blue text-luna-beige rounded-lg text-center">
     <Image
       className="w-24 h-24 md:w-[213px] md:h-[213px] object-cover"
       src={imageSrc}
