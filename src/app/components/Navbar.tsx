@@ -1,31 +1,65 @@
 'use client';
 import Link from 'next/link';
-import { routes } from '@/utilities/routes';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
+
+const navLinks = [
+    { href: '/', label: 'Home' },
+    { href: '/team', label: 'Team' },
+    { href: '/fundraising', label: 'Fundraising' }
+];
 
 const Navbar = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
 
+    // Close menu when clicking outside
+    useEffect(() => {
+        const handleClickOutside = (event: MouseEvent) => {
+            const nav = document.getElementById('mobile-menu');
+            if (nav && !nav.contains(event.target as Node)) {
+                setIsMenuOpen(false);
+            }
+        };
+
+        if (isMenuOpen) {
+            document.addEventListener('mousedown', handleClickOutside);
+        }
+        return () => {
+            document.removeEventListener('mousedown', handleClickOutside);
+        };
+    }, [isMenuOpen]);
+
+    // Prevent scroll when menu is open
+    useEffect(() => {
+        if (isMenuOpen) {
+            document.body.style.overflow = 'hidden';
+        } else {
+            document.body.style.overflow = 'unset';
+        }
+        return () => {
+            document.body.style.overflow = 'unset';
+        };
+    }, [isMenuOpen]);
+
     return (
-        <nav className="bg-luna-blue text-white">
+        <nav className="bg-luna-blue text-white relative z-50">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="flex justify-between items-center h-16">
                     <Link href="/" className="font-bold text-xl">
                         Luna Initiative
                     </Link>
                     <div className="hidden md:flex space-x-8">
-                        <Link href={routes.home} className="hover:text-white/80 transition-colors">
-                            Home
-                        </Link>
-                        <Link href={routes.team} className="hover:text-white/80 transition-colors">
-                            Team
-                        </Link>
-                        <Link href={routes.fundraising} className="hover:text-white/80 transition-colors">
-                            Fundraising
-                        </Link>
+                        {navLinks.map((link) => (
+                            <Link
+                                key={link.href}
+                                href={link.href}
+                                className="hover:text-white/80 transition-colors"
+                            >
+                                {link.label}
+                            </Link>
+                        ))}
                     </div>
                     <button
-                        className="md:hidden p-2"
+                        className="md:hidden p-2 hover:bg-luna-blue-light rounded-lg transition-colors"
                         onClick={() => setIsMenuOpen(!isMenuOpen)}
                         aria-label="Toggle menu"
                     >
@@ -47,29 +81,30 @@ const Navbar = () => {
                     </button>
                 </div>
                 {isMenuOpen && (
-                    <div className="md:hidden py-4 space-y-4">
-                        <Link
-                            href={routes.home}
-                            className="block hover:text-white/80 transition-colors py-2"
+                    <>
+                        <div
+                            className="fixed inset-0 bg-black bg-opacity-50 md:hidden"
+                            aria-hidden="true"
                             onClick={() => setIsMenuOpen(false)}
+                        />
+                        <div
+                            id="mobile-menu"
+                            className="absolute top-16 left-0 right-0 bg-luna-blue md:hidden shadow-lg border-t border-white/10"
                         >
-                            Home
-                        </Link>
-                        <Link
-                            href={routes.team}
-                            className="block hover:text-white/80 transition-colors py-2"
-                            onClick={() => setIsMenuOpen(false)}
-                        >
-                            Team
-                        </Link>
-                        <Link
-                            href={routes.fundraising}
-                            className="block hover:text-white/80 transition-colors py-2"
-                            onClick={() => setIsMenuOpen(false)}
-                        >
-                            Fundraising
-                        </Link>
-                    </div>
+                            <div className="px-4 py-2">
+                                {navLinks.map((link) => (
+                                    <Link
+                                        key={link.href}
+                                        href={link.href}
+                                        className="block px-4 py-3 rounded-lg hover:bg-luna-blue-light transition-colors"
+                                        onClick={() => setIsMenuOpen(false)}
+                                    >
+                                        {link.label}
+                                    </Link>
+                                ))}
+                            </div>
+                        </div>
+                    </>
                 )}
             </div>
         </nav>

@@ -155,7 +155,7 @@ export default function Team() {
           </p>
           <a
             href="mailto:team@thelunainitiative.org"
-            className="inline-block w-full sm:w-auto bg-white text-luna-blue px-6 sm:px-8 py-3 sm:py-4 rounded-lg font-semibold hover:bg-luna-neutral-100 transition-all duration-300 transform hover:-translate-y-1 text-sm sm:text-base"
+            className="inline-block w-[200px] sm:w-[250px] bg-white text-luna-blue px-6 sm:px-8 py-3 sm:py-4 rounded-lg font-semibold hover:bg-luna-neutral-100 transition-all duration-300 transform hover:-translate-y-1 text-sm sm:text-base"
           >
             Get in Touch
           </a>

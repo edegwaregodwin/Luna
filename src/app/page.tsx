@@ -27,10 +27,10 @@ export default function Home() {
                 Join us in our mission to equip young people with the tools they need to thrive in life.
               </p>
               <div className="pt-4 sm:pt-6 md:pt-8">
-                <Link href={routes.fundraising} className="block sm:inline-block">
+                <Link href={routes.fundraising} className="inline-block">
                   <LunaButton
                     text="GET INVOLVED"
-                    className="w-full sm:w-auto bg-white text-luna-blue hover:bg-luna-neutral-100 transition-all duration-300 py-3 sm:py-4 px-6 sm:px-10 rounded-lg font-bold text-base sm:text-lg shadow-lg hover:shadow-xl transform hover:-translate-y-1"
+                    className="w-[200px] sm:w-[250px] bg-white text-luna-blue hover:bg-luna-neutral-100 transition-all duration-300 py-3 sm:py-4 px-6 sm:px-10 rounded-lg font-bold text-base sm:text-lg shadow-lg hover:shadow-xl transform hover:-translate-y-1"
                   />
                 </Link>
               </div>
@@ -83,10 +83,10 @@ export default function Home() {
           <p className="text-lg sm:text-xl text-luna-neutral-600 mb-8 sm:mb-10">
             Together, we can make a difference.
           </p>
-          <Link href={routes.fundraising} className="block sm:inline-block">
+          <Link href={routes.fundraising} className="inline-block">
             <LunaButton
               text="GET INVOLVED TODAY"
-              className="w-full sm:w-auto bg-luna-blue text-white hover:bg-luna-blue-light transition-all duration-300 py-3 sm:py-4 px-6 sm:px-10 rounded-lg font-bold text-base sm:text-lg shadow-lg hover:shadow-xl transform hover:-translate-y-1"
+              className="w-[200px] sm:w-[250px] bg-luna-blue text-white hover:bg-luna-blue-light transition-all duration-300 py-3 sm:py-4 px-6 sm:px-10 rounded-lg font-bold text-base sm:text-lg shadow-lg hover:shadow-xl transform hover:-translate-y-1"
             />
           </Link>
         </div>
