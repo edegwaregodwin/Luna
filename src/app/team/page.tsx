@@ -151,7 +151,7 @@ export default function Team() {
         <div className="mt-12 sm:mt-16 md:mt-20 text-center bg-white/5 backdrop-blur-sm rounded-xl sm:rounded-2xl p-6 sm:p-8 md:p-12">
           <h2 className="text-2xl sm:text-3xl font-bold text-white mb-3 sm:mb-4">Join Our Team</h2>
           <p className="text-white/90 text-sm sm:text-base md:text-lg mb-6 sm:mb-8 max-w-2xl mx-auto">
-            We're always looking for passionate individuals who share our vision of making a positive impact in our community.
+            We&apos;re always looking for passionate individuals who share our vision of making a positive impact in our community.
           </p>
           <a
             href="mailto:team@thelunainitiative.org"

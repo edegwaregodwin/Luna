@@ -1,5 +1,3 @@
-import Image from "next/image";
-
 const pastEvents = [
   {
     title: "Sodexo Stop Hunger Foundation Partnership",
@@ -21,7 +19,7 @@ const pastEvents = [
   }
 ];
 
-const upcomingEvents = [
+/*const upcomingEvents = [
   {
     title: "Enactus UK & Ireland Regional Impact Accelerators",
     date: "2025",
@@ -32,7 +30,7 @@ const upcomingEvents = [
     date: "2025",
     description: "We are planning on hosting fundraisers at UCL. Keep an eye out for updates on our social media for more information.",
   },
-];
+];*/
 
 export default function Fundraising() {
   return (

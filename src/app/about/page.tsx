@@ -26,7 +26,7 @@ export default function About() {
                         <p>
                             Our workshops bridge the gap between classroom learning and essential life skills, helping students build
                             confidence and succeed in their future endeavors. We believe that education should be accessible, engaging,
-                            and relevant to today's challenges.
+                            and relevant to today&apos;s challenges.
                         </p>
                     </div>
                 </div>
@@ -65,7 +65,7 @@ export default function About() {
                 <div className="max-w-4xl mx-auto text-center">
                     <h2 className="text-xl sm:text-2xl md:text-3xl font-bold mb-4 sm:mb-6">Get in Touch</h2>
                     <p className="text-white/90 text-sm sm:text-base md:text-lg mb-6 sm:mb-8 px-2">
-                        Want to learn more about The Luna Initiative? We'd love to hear from you.
+                        Want to learn more about The Luna Initiative? We&apos;d love to hear from you.
                     </p>
                     <a
                         href="mailto:team@thelunainitiative.org"
