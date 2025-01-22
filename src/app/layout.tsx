@@ -1,24 +1,26 @@
 import type { Metadata } from "next";
+import { Inter } from "next/font/google";
 import "./globals.css";
-import Header from "@/components/modules/Header";
-import Footer from "@/components/modules/Footer";
+import Navbar from "@/app/components/Navbar";
+import Footer from "@/app/components/Footer";
+
+const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "The Luna Initiative",
-  description:
-    "The Luna Initiative is dedicated to combating period poverty by providing accessible menstrual products and hosting educational workshops on menstrual health.",
+  title: "Luna Initiative",
+  description: "Empowering Through Education & Access",
 };
 
 export default function RootLayout({
   children,
-}: Readonly<{
+}: {
   children: React.ReactNode;
-}>) {
+}) {
   return (
     <html lang="en">
-      <body className="antialiased">
-        <Header />
-        <div className="min-h-content-screen">{children}</div>
+      <body className={inter.className}>
+        <Navbar />
+        {children}
         <Footer />
       </body>
     </html>
