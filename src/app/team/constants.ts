@@ -40,10 +40,10 @@ export const teamInfo: {
   {
     name: "ANNA CHARLOTTE ENGELBERT",
     image: Anna,
-    position: "VP of Sales",
+    position: "Outreach and Partnerships",
   },
-  { name: "JIA EN WONG", image: Jia, position: "VP of Sales" },
-  { name: "GENEVA CHAN", image: Geneva, position: "VP of Sales" },
+  { name: "JIA EN WONG", image: Jia, position: "Outreach and Partnerships" },
+  { name: "GENEVA CHAN", image: Geneva, position: "Outreach and Partnerships" },
 
   {
     name: "NIRUPAMA RAJEEV NAIR",
