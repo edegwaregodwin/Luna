@@ -54,19 +54,19 @@ const teamMembers = [
   },
   {
     name: "Anna Charlotte Engelbert",
-    role: "VP of Sales",
+    role: "Outreach and Partnerships",
     image: AnnaImage,
     category: "Sales"
   },
   {
     name: "Jia En Wong",
-    role: "VP of Sales",
+    role: "Outreach and Partnerships",
     image: JiaImage,
     category: "Sales"
   },
   {
     name: "Geneva Chan",
-    role: "VP of Sales",
+    role: "Outreach and Partnerships",
     image: GenevaImage,
     category: "Sales"
   },
