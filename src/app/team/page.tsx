@@ -15,7 +15,7 @@ const teamCategories = [
   "Leadership",
   "Operations",
   "Education",
-  "Sales",
+  "Outreach",
   "Marketing",
   "Development",
   "Partnerships"

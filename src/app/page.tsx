@@ -27,9 +27,9 @@ export default function Home() {
                 Join us in our mission to equip young people with the tools they need to thrive in life.
               </p>
               <div className="pt-4 sm:pt-6 md:pt-8">
-                <Link href={routes.fundraising} className="inline-block">
+                <Link href={routes.about} className="inline-block">
                   <LunaButton
-                    text="GET INVOLVED"
+                    text="ABOUT US"
                     className="w-[200px] sm:w-[250px] bg-white text-luna-blue hover:bg-luna-neutral-100 transition-all duration-300 py-3 sm:py-4 px-6 sm:px-10 rounded-lg font-bold text-base sm:text-lg shadow-lg hover:shadow-xl transform hover:-translate-y-1"
                   />
                 </Link>
