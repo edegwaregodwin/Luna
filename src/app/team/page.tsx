@@ -48,7 +48,7 @@ const teamMembers = [
   },
   {
     name: "Alice Wang",
-    role: "Head of HR",
+    role: "Head of Recruitment",
     image: AliceImage,
     category: "Operations"
   },
