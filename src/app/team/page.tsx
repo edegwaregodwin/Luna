@@ -10,6 +10,7 @@ import GenevaImage from "@/../public/images/team/geneva.jpg";
 import NirupamaImage from "@/../public/images/team/nirupama.jpg";
 import CristinaImage from "@/../public/images/team/cristina.jpg";
 import GodwinImage from "@/../public/images/team/godwin.jpg";
+import KarlImage from "@/../public/images/team/KarlDumasia.jpeg"
 
 const teamCategories = [
   "Leadership",
@@ -68,6 +69,12 @@ const teamMembers = [
     name: "Geneva Chan",
     role: "Outreach and Partnerships",
     image: GenevaImage,
+    category: "Sales"
+  },
+  {
+    name: "Karl Dumasia",
+    role: "Outreach and Partnerships",
+    image: KarlImage,
     category: "Sales"
   },
   {
