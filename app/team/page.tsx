@@ -1,35 +1,11 @@
-import { Header } from "@/components/header"
-import { Footer } from "@/components/footer"
-import { Button } from "@/components/ui/button"
-import { Card, CardContent } from "@/components/ui/card"
-import { ArrowRight } from "lucide-react"
-import Image from "next/image"
-import Link from "next/link"
-
-// Team member type
-type TeamMember = {
-  name: string
-  role: string
-  image: string
-}
-
-// Team members data
-const teamMembers: TeamMember[] = [
-  { name: "Eddie Childs", role: "Project Lead", image: "/placeholder.svg" },
-  { name: "Emily Baker", role: "Head of Operations", image: "/placeholder.svg" },
-  { name: "Anna Charlotte Engelbert", role: "Outreach and Partnerships", image: "/placeholder.svg" },
-  { name: "Jia En Wong", role: "Outreach and Partnerships", image: "/placeholder.svg" },
-  { name: "Geneva Chan", role: "Outreach and Partnerships", image: "/placeholder.svg" },
-  { name: "Karl Dumasia", role: "Outreach and Partnerships", image: "/placeholder.svg" },
-  { name: "Giorgio Gastaut", role: "Treasurer", image: "/placeholder.svg" },
-  { name: "Alice Wang", role: "Head of Recruitment", image: "/placeholder.svg" },
-  { name: "Godwin Edegware", role: "Website Developer", image: "/placeholder.svg" },
-  { name: "Cristina Dario", role: "Marketing and Fundraising", image: "/placeholder.svg" },
-  { name: "Nirupama Rajeev Nair", role: "Fundraising and Partnerships", image: "/placeholder.svg" },
-  { name: "Anthea Gabot", role: "Educational Workshops", image: "/placeholder.svg" },
-  { name: "Sophie Johns", role: "Educational Workshops", image: "/placeholder.svg" },
-  { name: "Afiq Fauzan", role: "Educational Workshops", image: "/placeholder.svg" },
-]
+import { Header } from "@/components/header";
+import { Footer } from "@/components/footer";
+import { Button } from "@/components/ui/button";
+import { Card, CardContent } from "@/components/ui/card";
+import { ArrowRight } from "lucide-react";
+import Image from "next/image";
+import Link from "next/link";
+import { teamMembers } from "./constants";
 
 export default function TeamPage() {
   return (
@@ -44,18 +20,23 @@ export default function TeamPage() {
             Meet Our Team
           </h1>
           <p className="mx-auto max-w-[700px] text-lg text-muted-foreground md:text-xl">
-            A passionate team dedicated to empowering young people with the skills and knowledge they need for a
-            brighter future.
+            A passionate team dedicated to empowering young people with the
+            skills and knowledge they need for a brighter future.
           </p>
         </div>
       </section>
 
       {/* Team Section */}
       <section className="container mx-auto px-4 py-16 md:px-6 lg:px-8">
-        <h2 className="text-3xl font-bold tracking-tighter mb-8 text-center md:text-4xl">Team</h2>
+        <h2 className="text-3xl font-bold tracking-tighter mb-8 text-center md:text-4xl">
+          Team
+        </h2>
         <div className="grid gap-4 grid-cols-3 sm:gap-6 md:gap-8">
           {teamMembers.map((member) => (
-            <Card key={member.name} className="group relative overflow-hidden transition-all hover:shadow-lg w-full">
+            <Card
+              key={member.name}
+              className="group relative overflow-hidden transition-all hover:shadow-lg w-full"
+            >
               <CardContent className="p-2 sm:p-4 md:p-6">
                 <div className="aspect-square overflow-hidden rounded-full mb-2 sm:mb-4">
                   <Image
@@ -67,8 +48,12 @@ export default function TeamPage() {
                   />
                 </div>
                 <div className="text-center">
-                  <h3 className="text-xs sm:text-sm md:text-xl font-bold">{member.name}</h3>
-                  <p className="mt-1 sm:mt-2 text-xs sm:text-sm text-muted-foreground">{member.role}</p>
+                  <h3 className="text-xs sm:text-sm md:text-xl font-bold">
+                    {member.name}
+                  </h3>
+                  <p className="mt-1 sm:mt-2 text-xs sm:text-sm text-muted-foreground">
+                    {member.role}
+                  </p>
                 </div>
               </CardContent>
               <div className="absolute inset-0 -z-10 bg-gradient-to-b from-blue-50/50 to-transparent opacity-0 transition-opacity group-hover:opacity-100" />
@@ -82,8 +67,8 @@ export default function TeamPage() {
         <div className="rounded-3xl bg-gradient-to-r from-blue-50 to-blue-100 p-8 text-center md:p-16">
           <h2 className="mb-4 text-2xl font-bold md:text-3xl">Join Our Team</h2>
           <p className="mb-8 text-muted-foreground">
-            We're always looking for passionate individuals who share our vision of making a positive impact in our
-            community.
+            We're always looking for passionate individuals who share our vision
+            of making a positive impact in our community.
           </p>
           <Link href="/get-started">
             <Button size="lg" className="rounded-full">
@@ -96,6 +81,5 @@ export default function TeamPage() {
 
       <Footer />
     </div>
-  )
+  );
 }
-
