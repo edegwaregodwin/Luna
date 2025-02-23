@@ -72,7 +72,7 @@ export default function GetStartedPage() {
         <div className="absolute inset-0 -z-10 bg-[linear-gradient(to_right,#8080800a_1px,transparent_1px),linear-gradient(to_bottom,#8080800a_1px,transparent_1px)] bg-[size:4rem_4rem]"></div>
         <div className="space-y-4">
           <h1 className="bg-gradient-to-r from-blue-600 to-blue-800 bg-clip-text text-4xl font-bold tracking-tighter text-transparent md:text-6xl lg:text-7xl xl:text-8xl pb-2 leading-tight">
-            Get Started with Luna Initiative
+            Get Started with The Luna Initiative
           </h1>
           <p className="mx-auto max-w-[700px] text-lg text-muted-foreground md:text-xl">
             Join us in our mission to empower young people through education.
@@ -184,7 +184,9 @@ export default function GetStartedPage() {
                 <ArrowRight className="ml-2 h-4 w-4" />
               </Button>
               {showSuccess && (
-                <p className="text-green-600">Sent successfully.</p>
+                <p className="text-green-600">
+                  Thanks for submitting, we will get back to you shortly!
+                </p>
               )}
               {showFail && (
                 <p className="text-red-700">Something went wrong, try again.</p>
@@ -198,7 +200,7 @@ export default function GetStartedPage() {
       </section>
 
       {/* CTA Section */}
-      <section className="container mx-auto px-4 py-16 md:px-6 lg:px-8">
+      <section className="container mx-auto px-4 max-md:pb-16 max-md:pt-8 md:py-16 md:px-6 lg:px-8">
         <div className="rounded-3xl bg-gradient-to-r from-blue-50 to-blue-100 p-8 text-center md:p-16">
           <h2 className="mb-4 text-2xl font-bold md:text-3xl">
             Support Our Mission

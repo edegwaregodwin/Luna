@@ -63,14 +63,14 @@ export default function TeamPage() {
       </section>
 
       {/* Join Section */}
-      <section className="container mx-auto px-4 py-16 md:px-6 lg:px-8">
+      <section className="container mx-auto px-4 max-md:pb-16 md:py-16 md:px-6 lg:px-8">
         <div className="rounded-3xl bg-gradient-to-r from-blue-50 to-blue-100 p-8 text-center md:p-16">
           <h2 className="mb-4 text-2xl font-bold md:text-3xl">Join Our Team</h2>
           <p className="mb-8 text-muted-foreground">
             We're always looking for passionate individuals who share our vision
             of making a positive impact in our community.
           </p>
-          <Link href="/get-started">
+          <Link href="/contact">
             <Button size="lg" className="rounded-full">
               Get in Touch
               <ArrowRight className="ml-2 h-4 w-4" />

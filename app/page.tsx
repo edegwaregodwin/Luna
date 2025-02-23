@@ -1,9 +1,9 @@
-import Link from "next/link"
-import { Header } from "@/components/header"
-import { Footer } from "@/components/footer"
-import { Button } from "@/components/ui/button"
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
-import { ArrowRight, BookOpen, Users, Target } from "lucide-react"
+import Link from "next/link";
+import { Header } from "@/components/header";
+import { Footer } from "@/components/footer";
+import { Button } from "@/components/ui/button";
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { ArrowRight, BookOpen, Users, Target } from "lucide-react";
 
 export default function HomePage() {
   return (
@@ -18,12 +18,13 @@ export default function HomePage() {
             Empowering Through Education
           </h1>
           <p className="mx-auto max-w-[700px] text-lg text-muted-foreground md:text-xl">
-            Join us in our mission to equip young people with the tools they need to thrive in life.
+            Join us in our mission to equip young people with the tools they
+            need to thrive in life.
           </p>
           <div className="space-x-4">
-            <Link href="/get-started">
+            <Link href="/contact">
               <Button size="lg" className="rounded-full">
-                Get Started
+                Contact Us
                 <ArrowRight className="ml-2 h-4 w-4" />
               </Button>
             </Link>
@@ -37,12 +38,16 @@ export default function HomePage() {
       </section>
 
       {/* Mission Section */}
-      <section className="container mx-auto px-4 py-16 md:px-6 lg:px-8">
+      <section className="container mx-auto px-4 max-md:pb-12 md:py-16 md:px-6 lg:px-8">
         <div className="mx-auto max-w-[800px] space-y-4 text-center">
-          <h2 className="text-3xl font-bold tracking-tighter md:text-4xl">Our Mission</h2>
+          <h2 className="text-3xl font-bold tracking-tighter md:text-4xl">
+            Our Mission
+          </h2>
           <p className="text-muted-foreground">
-            Our mission is to inspire and empower young people by providing educational workshops that bridge the gap
-            between classroom learning and real-world skills, helping them build confidence and succeed in life.
+            Our mission is to inspire and empower young people by providing
+            educational workshops that bridge the gap between classroom learning
+            and real-world skills, helping them build confidence and succeed in
+            life.
           </p>
         </div>
       </section>
@@ -58,7 +63,8 @@ export default function HomePage() {
             </CardHeader>
             <CardContent>
               <p className="text-muted-foreground">
-                Many important topics and essential life skills are left out of traditional school curriculums.
+                Many important topics and essential life skills are left out of
+                traditional school curriculums.
               </p>
             </CardContent>
           </Card>
@@ -71,8 +77,8 @@ export default function HomePage() {
             </CardHeader>
             <CardContent>
               <p className="text-muted-foreground">
-                We deliver engaging educational workshops in schools to equip students with the knowledge and tools for
-                a successful future.
+                We deliver engaging educational workshops in schools to equip
+                students with the knowledge and tools for a successful future.
               </p>
             </CardContent>
           </Card>
@@ -85,7 +91,8 @@ export default function HomePage() {
             </CardHeader>
             <CardContent>
               <p className="text-muted-foreground">
-                Partner with us, volunteer, or donate to help inspire and empower the next generation.
+                Partner with us, volunteer, or donate to help inspire and
+                empower the next generation.
               </p>
             </CardContent>
           </Card>
@@ -93,13 +100,17 @@ export default function HomePage() {
       </section>
 
       {/* CTA Section */}
-      <section className="container mx-auto px-4 py-16 md:px-6 lg:px-8">
+      <section className="container mx-auto px-4 max-md:pb-16 max-md:pt-8 md:py-16 md:px-6 lg:px-8">
         <div className="rounded-3xl bg-gradient-to-r from-blue-50 to-blue-100 p-8 text-center md:p-16">
-          <h2 className="mb-4 text-2xl font-bold md:text-3xl">Ready to Make a Difference?</h2>
-          <p className="mb-8 text-muted-foreground">Join us in shaping the future of education.</p>
-          <Link href="/get-started">
+          <h2 className="mb-4 text-2xl font-bold md:text-3xl">
+            Ready to Make a Difference?
+          </h2>
+          <p className="mb-8 text-muted-foreground">
+            Join us in shaping the future of education.
+          </p>
+          <Link href="/contact">
             <Button size="lg" className="rounded-full">
-              Get Started Now
+              Contact Us Now
               <ArrowRight className="ml-2 h-4 w-4" />
             </Button>
           </Link>
@@ -108,6 +119,5 @@ export default function HomePage() {
 
       <Footer />
     </div>
-  )
+  );
 }
-
