@@ -13,6 +13,7 @@ import GodwinImage from "@/public/images/team/godwin.jpg";
 import KarlImage from "@/public/images/team/KarlDumasia.jpeg";
 import SophieImage from "@/public/images/team/sophie.jpeg";
 import AfiqImage from "@/public/images/team/afiq.jpeg";
+import OliviaImage from "@/public/images/team/olivia.jpeg";
 
 export const teamMembers: {
   name: string;
@@ -88,5 +89,10 @@ export const teamMembers: {
     name: "Afiq Fauzan",
     role: "Educational Workshop Team",
     image: AfiqImage,
+  },
+  {
+    name: "Olivia Dutta",
+    role: "Educational Workshop Team",
+    image: OliviaImage,
   },
 ];
