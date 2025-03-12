@@ -14,6 +14,7 @@ import KarlImage from "@/public/images/team/KarlDumasia.jpeg";
 import SophieImage from "@/public/images/team/sophie.jpeg";
 import AfiqImage from "@/public/images/team/afiq.jpeg";
 import OliviaImage from "@/public/images/team/olivia.jpeg";
+import LilyImage from "@/public/images/team/lily.jpeg";
 
 export const teamMembers: {
   name: string;
@@ -29,6 +30,26 @@ export const teamMembers: {
     name: "Emily Baker",
     role: "Head of Operations",
     image: EmilyImage,
+  },
+  {
+    name: "Anthea Gabot",
+    role: "Head of Educational Workshops",
+    image: AntheaImage,
+  },
+  {
+    name: "Alice Wang",
+    role: "Head of Recruitment",
+    image: AliceImage,
+  },
+  {
+    name: "Lily Wu",
+    role: "Head of Partnerships",
+    image: LilyImage,
+  },
+  {
+    name: "Giorgio Gastaut",
+    role: "Treasurer",
+    image: GiorgioImage,
   },
   {
     name: "Anna Charlotte Engelbert",
@@ -51,16 +72,6 @@ export const teamMembers: {
     image: KarlImage,
   },
   {
-    name: "Giorgio Gastaut",
-    role: "Treasurer",
-    image: GiorgioImage,
-  },
-  {
-    name: "Alice Wang",
-    role: "Head of Recruitment",
-    image: AliceImage,
-  },
-  {
     name: "Godwin Edegware",
     role: "Website Developer",
     image: GodwinImage,
@@ -74,11 +85,6 @@ export const teamMembers: {
     name: "Nirupama Rajeev Nair",
     role: "Fundraising and Partnerships",
     image: NirupamaImage,
-  },
-  {
-    name: "Anthea Gabot",
-    role: "Head of Educational Workshops",
-    image: AntheaImage,
   },
   {
     name: "Sophie Johns",
