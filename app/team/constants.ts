@@ -15,6 +15,8 @@ import SophieImage from "@/public/images/team/sophie.jpeg";
 import AfiqImage from "@/public/images/team/afiq.jpeg";
 import OliviaImage from "@/public/images/team/olivia.jpeg";
 import LilyImage from "@/public/images/team/lily.jpeg";
+import BedatImage from "@/public/images/team/bedat.jpg";
+import ShakeelImage from "@/public/images/team/shakeel.jpg";
 
 export const teamMembers: {
   name: string;
@@ -100,5 +102,15 @@ export const teamMembers: {
     name: "Olivia Dutta",
     role: "Educational Workshop Team",
     image: OliviaImage,
+  },
+  {
+    name: "Bedat Lee",
+    role: "Fundraising Team",
+    image: BedatImage,
+  },
+  {
+    name: "Shakeel Majeed",
+    role: "Fundraising Team + Volunteer",
+    image: ShakeelImage,
   },
 ];
