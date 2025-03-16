@@ -17,6 +17,7 @@ import OliviaImage from "@/public/images/team/olivia.jpeg";
 import LilyImage from "@/public/images/team/lily.jpeg";
 import BedatImage from "@/public/images/team/bedat.jpg";
 import ShakeelImage from "@/public/images/team/shakeel.jpg";
+import NicklasImage from "@/public/images/team/nicklas.jpg";
 
 export const teamMembers: {
   name: string;
@@ -72,6 +73,11 @@ export const teamMembers: {
     name: "Karl Dumasia",
     role: "Outreach and Partnerships",
     image: KarlImage,
+  },
+  {
+    name: "Nicklas San",
+    role: "Outreach and Partnerships",
+    image: NicklasImage,
   },
   {
     name: "Godwin Edegware",
