@@ -8,7 +8,6 @@ import AnnaImage from "@/public/images/team/anna.jpg";
 import JiaImage from "@/public/images/team/jia.jpg";
 import GenevaImage from "@/public/images/team/geneva.jpg";
 import NirupamaImage from "@/public/images/team/nirupama.jpg";
-import CristinaImage from "@/public/images/team/cristina.jpg";
 import GodwinImage from "@/public/images/team/godwin.jpg";
 import KarlImage from "@/public/images/team/KarlDumasia.jpeg";
 import SophieImage from "@/public/images/team/sophie.jpeg";
@@ -18,6 +17,12 @@ import LilyImage from "@/public/images/team/lily.jpeg";
 import BedatImage from "@/public/images/team/bedat.jpg";
 import ShakeelImage from "@/public/images/team/shakeel.jpg";
 import NicklasImage from "@/public/images/team/nicklas.jpg";
+import ChloeImage from "@/public/images/team/chloe.jpg";
+import CalistaImage from "@/public/images/team/calista.jpg";
+import JenessaImage from "@/public/images/team/jenessa.jpg";
+import KatherineImage from "@/public/images/team/katherine.jpg";
+import SaritaImage from "@/public/images/team/sarita.jpg";
+import RobincellaImage from "@/public/images/team/robincella.jpg";
 
 export const teamMembers: {
   name: string;
@@ -80,43 +85,68 @@ export const teamMembers: {
     image: NicklasImage,
   },
   {
+    name: "Calista San",
+    role: "Outreach and Partnerships",
+    image: CalistaImage,
+  },
+  {
     name: "Godwin Edegware",
     role: "Website Developer",
     image: GodwinImage,
   },
   {
-    name: "Cristina Dario",
-    role: "Marketing and Fundraising",
-    image: CristinaImage,
-  },
-  {
-    name: "Nirupama Rajeev Nair",
-    role: "Fundraising and Partnerships",
-    image: NirupamaImage,
-  },
-  {
     name: "Sophie Johns",
-    role: "Educational Workshop Team",
+    role: "Educational Workshops",
     image: SophieImage,
   },
   {
     name: "Afiq Fauzan",
-    role: "Educational Workshop Team",
+    role: "Educational Workshops",
     image: AfiqImage,
   },
   {
     name: "Olivia Dutta",
-    role: "Educational Workshop Team",
+    role: "Educational Workshops",
     image: OliviaImage,
   },
   {
+    name: "Jenessa Diep",
+    role: "Educational Workshops",
+    image: JenessaImage,
+  },
+  {
+    name: "Robincella Hanna",
+    role: "Educational Workshops",
+    image: RobincellaImage,
+  },
+  {
     name: "Bedat Lee",
-    role: "Fundraising Team",
+    role: "Fundraising",
     image: BedatImage,
   },
   {
     name: "Shakeel Majeed",
-    role: "Fundraising Team + Volunteer",
+    role: "Fundraising",
     image: ShakeelImage,
+  },
+  {
+    name: "Nirupama Rajeev Nair",
+    role: "Fundraising",
+    image: NirupamaImage,
+  },
+  {
+    name: "Chloe Luk",
+    role: "Fundraising",
+    image: ChloeImage,
+  },
+  {
+    name: "Katherine Deng",
+    role: "Fundraising",
+    image: KatherineImage,
+  },
+  {
+    name: "Sarita Panchakunathorn",
+    role: "Marketing",
+    image: SaritaImage,
   },
 ];
