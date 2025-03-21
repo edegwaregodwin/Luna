@@ -23,6 +23,7 @@ import JenessaImage from "@/public/images/team/jenessa.jpg";
 import KatherineImage from "@/public/images/team/katherine.jpg";
 import SaritaImage from "@/public/images/team/sarita.jpg";
 import RobincellaImage from "@/public/images/team/robincella.jpg";
+import AngelImage from "@/public/images/team/angel.jpg";
 
 export const teamMembers: {
   name: string;
@@ -148,5 +149,10 @@ export const teamMembers: {
     name: "Sarita Panchakunathorn",
     role: "Marketing",
     image: SaritaImage,
+  },
+  {
+    name: "Angel Chan",
+    role: "Marketing",
+    image: AngelImage,
   },
 ];
