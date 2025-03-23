@@ -86,7 +86,7 @@ export const teamMembers: {
     image: NicklasImage,
   },
   {
-    name: "Calista San",
+    name: "Calista Chan",
     role: "Outreach and Partnerships",
     image: CalistaImage,
   },
