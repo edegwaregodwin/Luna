@@ -3,7 +3,9 @@ import { Footer } from "@/components/footer";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { ArrowRight, Lightbulb, Users, Rocket } from "lucide-react";
+import Image from "next/image";
 import Link from "next/link";
+import WorkshopImage from "@/public/images/workshop.jpg";
 
 export default function AboutPage() {
   return (
@@ -50,6 +52,13 @@ export default function AboutPage() {
               challenges.
             </p>
           </div>
+          <Image
+            src={WorkshopImage}
+            alt="workshop"
+            width={1600}
+            height={1200}
+            className="h-full w-full object-cover"
+          />
         </div>
       </section>
 
