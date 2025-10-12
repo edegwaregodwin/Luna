@@ -44,7 +44,7 @@ export default function GetStartedPage() {
     setIsSubmitting(true);
 
     try {
-      const response = await fetch("/api/form", {
+      const response = await fetch("https://formspree.io/f/mwprrlrb", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(formData),
