@@ -2,8 +2,9 @@
 
 import { useState } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { Button } from "@/components/ui/button";
-import { GraduationCap, Menu, X } from "lucide-react";
+import { Menu, X } from "lucide-react";
 
 const navigation = [
   { name: "Home", href: "/" },
@@ -20,10 +21,10 @@ export function Header() {
   };
 
   return (
-    <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
+    <header className="sticky top-0 z-50 w-full border-b bg-background">
       <div className="container flex h-16 items-center justify-between">
         <Link href="/" className="flex items-center space-x-2">
-          <GraduationCap className="h-6 w-6 text-blue-600" />
+          <Image src="/images/logo.svg" alt="Luna Initiative Logo" width={24} height={24} className="h-6 w-6 object-contain" />
           <span className="text-lg font-bold">Luna Initiative</span>
         </Link>
         <nav className="hidden md:flex md:items-center md:space-x-8">

@@ -1,5 +1,6 @@
 import Link from "next/link";
-import { GraduationCap, Mail } from "lucide-react";
+import Image from "next/image";
+import { Mail } from "lucide-react";
 
 const navigation = {
   main: [
@@ -19,7 +20,7 @@ export function Footer() {
         <div className="grid gap-8 md:grid-cols-3">
           <div className="space-y-4">
             <Link href="/" className="flex items-center space-x-2">
-              <GraduationCap className="h-6 w-6 text-blue-600" />
+              <Image src="/images/logo.svg" alt="Luna Initiative Logo" width={24} height={24} className="h-6 w-6 object-contain" />
               <span className="text-lg font-bold text-gray-900">
                 Luna Initiative
               </span>
