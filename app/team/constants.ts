@@ -31,8 +31,13 @@ export const teamMembers: {
   image: StaticImageData;
 }[] = [
   {
-    name: "Eddie Childs",
+    name: "Olivia Dutta",
     role: "Project Lead",
+    image: OliviaImage,
+  },
+  {
+    name: "Eddie Childs",
+    role: "Advisor",
     image: EddieImage,
   },
   {
@@ -104,11 +109,6 @@ export const teamMembers: {
     name: "Afiq Fauzan",
     role: "Educational Workshops",
     image: AfiqImage,
-  },
-  {
-    name: "Olivia Dutta",
-    role: "Educational Workshops",
-    image: OliviaImage,
   },
   {
     name: "Jenessa Diep",
